@@ -1,0 +1,61 @@
+.btnContainer{
+    display: flex;
+    gap: 2px;
+}
+
+.deleteButton{
+    background-color: rgb(255, 51, 51);
+    color: white;
+    border: none;
+    border-radius: 3px;
+    padding: 6px 0;
+    width: 30px;
+    cursor: pointer;
+    transition: 200ms;
+}
+
+.editButton{
+    padding: 5px 0;
+    width: 30px;
+}
+
+.doneButton{
+    padding: 5px 0;
+    width: 30px;
+}
+
+.deleteButton:hover{
+    background-color:  rgb(190, 0, 0);
+}
+
+.card{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 15px;
+    text-transform: capitalize;
+    font-weight: bold;
+    border-bottom: 2px solid rgba(128, 128, 128, 0.3);
+    padding-bottom: 10px;
+}
+
+.line{
+    margin-top: 10px;
+    border: 1px solid rgba(128, 128, 128, 0.3);
+}
+
+.hide{
+    display: none;
+}
+
+.done{
+    text-decoration: line-through;
+    color: rgb(0, 178, 71);
+}
+
+@media(max-width:300px){
+    .card{
+        flex-direction: column;
+        gap: 10px;
+    }
+}
